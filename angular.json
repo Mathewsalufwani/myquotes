@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "myquotes"
+    }
+  },
+  "defaultProject": "myquotes",
+  "cli": {
+    "analytics": "c78f75c7-3e6a-4fc7-ba03-ec20fe9f0521"
+  }
 }
