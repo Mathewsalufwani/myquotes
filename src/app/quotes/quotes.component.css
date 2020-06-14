@@ -14,6 +14,11 @@ em{
   text-align: center;
 }
 
+button{
+  margin-left: 45%;
+  margin-right: 43%;
+}
+
 .jumbotron{
   background-color: #66b3ff;
 }
