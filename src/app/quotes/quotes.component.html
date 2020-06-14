@@ -4,10 +4,10 @@
 </div>
 
 <div class = "container shadow-lg p-3 mb-5 bg-white rounded">
-  <div  *ngFor= 'let quote of quotes'>
+  <div  *ngFor= 'let quote of quotes;let i = index'>
     <h3>"{{quote.quote}}"</h3><br>
     <p class="text-center"><em>~{{quote.author}}</em></p>
-    <button class="btn btn-outline-info">Show Details</button>
+    <button (click)='toggleDetails(i)' class="btn btn-outline-info">Show Details</button>
     <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'></app-quote-detail>
   </div>
 </div>

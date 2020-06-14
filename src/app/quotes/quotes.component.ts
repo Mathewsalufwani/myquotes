@@ -12,6 +12,10 @@ export class QuotesComponent implements OnInit {
     new Quotes('Do I not destroy my enemies when I make them my friends?', 'Abraham Lincoln', 'Mathews Alufwani', 0, 0, new Date(2020,11,11)),
   ];
 
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
