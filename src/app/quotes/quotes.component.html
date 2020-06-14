@@ -8,6 +8,6 @@
     <h3>"{{quote.quote}}"</h3><br>
     <p class="text-center"><em>~{{quote.author}}</em></p>
     <button (click)='toggleDetails(i)' class="btn btn-outline-info">Show Details</button>
-    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'></app-quote-detail>
+    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
   </div>
 </div>
