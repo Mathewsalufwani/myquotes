@@ -6,6 +6,15 @@ h6{
   text-align: center;
 }
 
+h3{
+  text-align: center;
+}
+
+em{
+  text-align: center;
+}
+
 .jumbotron{
   background-color: #66b3ff;
 }
+
