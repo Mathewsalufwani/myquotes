@@ -9,8 +9,8 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
 
   quotes: Quotes[] = [
-    new Quotes('Do I not destroy my enemies when I make them my friends?', 'Abraham Lincoln', 'Mathews Alufwani', 0, 0, new Date(2020,3,11)),
-    new Quotes('Nothing in life is promised except death.', 'Kanye West', 'Jacques Webster', 0, 0, new Date(2020,4,21))
+    new Quotes('Do I not destroy my enemies when I make them my friends?', 'Abraham Lincoln', 'Mathews Alufwani', 9, 1, new Date(2020,3,11)),
+    new Quotes('Nothing in life is promised except death.', 'Kanye West', 'Jacques Webster', 4, 2, new Date(2020,4,21))
   ];
 
   toggleDetails(index){
