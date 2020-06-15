@@ -1,26 +1,26 @@
-<div class="container-fluid">
+<div id = "tt" class="container-fluid">
   <h2 class="text-center">Create Your Own Quote!</h2>
   <hr>
-  <form>
+  <form #quoteForm='ngForm'>
     
       <div class="form-group">
 
           <label for="quote">Quote</label>
-          <textarea class="form-control" id="quote" rows="4" placeholder="Insert quote here..." required></textarea>
+          <textarea class="form-control" id="quote" rows="4" placeholder="Insert quote here..." required [(ngModel)]="newQuote.quote" name="quote"></textarea>
 
       </div>
 
       <div class="form-group">
 
           <label for="name">Author</label>
-          <input type="text" required class="form-control" id="author">
+          <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author">
 
       </div>
       
       <div class="form-group">
 
         <label for="name">Submitter</label>
-        <input type="text" required class="form-control" id="author">
+        <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.submitter" name="submitter">
 
       </div>
   </form>
