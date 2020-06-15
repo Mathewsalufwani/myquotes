@@ -3,21 +3,21 @@
   <h6>Get Quotes, Post quotes!</h6>
 </div>
 
-<div *ngFor= 'let quote of quotes;let i = index' class = "container shadow-lg p-3 mb-5 bg-white rounded">
+<div *ngFor= 'let quote of quotes;let i = index' class = "container shadow p-3 mb-5 bg-white rounded">
   <div *ngIf="highlightHighest() === quote.upvote && quote.upvote > 0">
     <h3 appHighlight>"{{quote.quote}}"</h3><br>
     <p class="text-center"><em>~{{quote.author}}</em></p>
-    <button (click)='toggleDetails(i)' class="btn btn-outline-info">Show Details</button> <hr>
+    <button (click)='toggleDetails(i)' class="btn btn-outline-info">Show Details</button>
   </div> 
   <div *ngIf="highlightHighest() !== quote.upvote || quote.upvote === 0">
     <h3>"{{quote.quote}}"</h3><br>
     <p class="text-center"><em>~{{quote.author}}</em></p>
-    <button (click)='toggleDetails(i)' class="btn btn-outline-info">Show Details</button> <hr>
+    <button (click)='toggleDetails(i)' class="btn btn-outline-info">Show Details</button>
   </div>
   <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
 </div>
 
 
-<div  id = "ld" class="shadow p-3 mb-5 bg-white rounded">
+<div  id = "ld" class="shadow-lg p-3 mb-5 bg-white rounded">
   <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 </div>
