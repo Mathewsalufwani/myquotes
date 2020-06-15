@@ -1,6 +1,9 @@
 <div class="card">
   <div class="card-footer">
     Submitted by {{quote.submitter}} on {{quote.date | date }} ({{quote.date | dateCount}} day(s) ago)<br>
+    <button (click)="upVote()" id = "ll" class="btn btn-outline-success btn-sm" ><img height="17" width="18" src="assets/like.png"> {{quote.upvote}}</button>
+    <button (click)="downVote()" id = "ll" class="btn btn-outline-danger btn-sm" ><img height="17" width="18" src="assets/bad.png"> {{quote.downvote}}</button>
     <button class="btn btn-danger btn-sm" (click)= 'quoteComplete(true)'>Delete Quote</button>
   </div>
 </div>
+<hr width="80%">
