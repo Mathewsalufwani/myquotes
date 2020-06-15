@@ -1,7 +1,7 @@
 <div id = "tt" class="container-fluid">
   <h2 class="text-center">Create Your Own Quote!</h2>
   <hr>
-  <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+  <form (ngSubmit)='submitQuote();quoteForm.resetForm({})' #quoteForm='ngForm'>
     
       <div class="form-group">
 
