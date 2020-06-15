@@ -1,27 +1,30 @@
 # Myquotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+#### This is a website where the user can read quotes and also post their own quotes.
+#### By Mathews Alufwani
 
-## Development server
+## Description
+When the user lands on the home page, he/she is greeted with a few quotes and upon scrolling the user will find a form where a quote can be input.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Setup Requirements
+* Core I5
+* 8GB of RAM
+* At least 256GB of memory
+* An up-to-date web browser
 
-## Code scaffolding
+## Known Bugs
+Once the quote is put in, any changes done on the form reflects on the quote.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Used
+This project was generated with Angular CLI version 9.1.3.
 
-## Build
+## Link to live page
+[Access the website with this link](https://Mathewsalufwani.github.io/myquotes/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Contact Information
+If you encounter any problems, be sure to email me at mathewalufwani@gmail.com or call me on +254704189013.
 
-## Running unit tests
+## License
+License by MIT (2020)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Copyright (c) [Mathews Alufwani](https://github.com/Mathewsalufwani)
